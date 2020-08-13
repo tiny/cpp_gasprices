@@ -123,7 +123,7 @@ class PriceStats
         _avg = _sum / (float)_cnt ;
     }
     const char *report( char *d ) {
-        sprintf( d, "%5.2f - %5.2f [avg: %5.2f]", _lo, _hi, _avg ) ;
+        snprintf( d, 255, "%5.2f - %5.2f [avg: %5.2f]", _lo, _hi, _avg ) ;
         return d ;
     }
     bool is_valid() const { return (_cnt > 0) ; }

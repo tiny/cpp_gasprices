@@ -4,4 +4,6 @@
 .vscode
 a.out
 gasprices
+Debug
+Release
 
